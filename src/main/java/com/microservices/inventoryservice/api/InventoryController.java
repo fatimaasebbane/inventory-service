@@ -22,7 +22,7 @@ public class InventoryController {
 
     @GetMapping
     public ResponseEntity<List<InventoryRepresentation>> isInStock(@RequestParam List<String> skuCode){
-        log.info("InventoryController is called {}", skuCode);
+        log.info("InventoryController is callede {}", skuCode);
         return ResponseEntity.ok(inventoryService.isInStock(skuCode));
     }
 
